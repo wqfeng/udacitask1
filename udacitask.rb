@@ -7,6 +7,8 @@ todo_list = TodoList.new("Qun Feng's TODOs")
 todo_list.add_item("Submit the Udacitask project")
 todo_list.add_item("Heat vs Raptos tomorrow")
 todo_list.add_item("Running for fun!")
+# update a due date
+todo_list.items[0].due_date = Time.new(2016, 5, 10)
 
 # Print the list
 puts todo_list
@@ -34,3 +36,6 @@ todo_list.title = "Almost finished!"
 
 # Print the list
 puts todo_list
+
+# save the todo list to a file
+todo_list.save

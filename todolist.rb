@@ -1,3 +1,5 @@
+require "Time"
+
 class TodoList
   # methods and stuff go here
   attr_accessor :title, :items
@@ -31,18 +33,25 @@ class TodoList
     return s
   end
 
+  def save
+  	f = File.new("todo.txt", "w+")
+  	f.puts(to_s)
+  	f.close()
+  end
+
 
 end
 
 class Item
   # methods and stuff go here
-  attr_accessor :description, :completed_status
+  attr_accessor :description, :completed_status, :due_date
 
   # Initialize item with a description and marked as
   # not complete
   def initialize(item_description)
     @description = item_description
     @completed_status = false
+    @due_date = Time.new(2016, 5, 31)
   end
 
   def competed?
@@ -50,8 +59,14 @@ class Item
   end
 
   def to_s
-  	@description + " " * (50 - @description.length)  + "Completed: #{@completed_status}"
+  	prefix + @description + " " * (30 - @description.length) + 
+  	"Completed: #{@completed_status}  Due Date: #{@due_date.strftime('%b/%d/%Y')}"
 
   end
+
+  def prefix
+  	(@due_date < Time.now)? "** ": ""
+  end
+
 
 end

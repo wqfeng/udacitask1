@@ -1,0 +1,7 @@
+=======================
+
+Feature #1: Add a due date
+
+Feature #2: Show a ** at the begining of the item when it's not done on time.
+
+Feature #3: Save the todo list to a file
