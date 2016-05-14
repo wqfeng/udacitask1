@@ -1,0 +1,17 @@
+commit a7dd4bb9f52ab26d6ef68ce1d549f39d2731ee1a
+Author: Wang Qun Feng <qunfengw@gmail.com>
+Date:   Sat May 14 21:19:38 2016 +0800
+
+    add new features
+
+commit ae6f07929efc2a56ab39bcd24e93db2911c4052d
+Author: Wang Qun Feng <qunfengw@gmail.com>
+Date:   Sat May 14 20:35:19 2016 +0800
+
+    1st version to meet the specification
+
+commit 37c82cf2073b0cc37825b387347c0c7e5c42c38d
+Author: Wang Qun Feng <qunfengw@gmail.com>
+Date:   Sat May 14 14:59:21 2016 +0800
+
+    Initial commit
