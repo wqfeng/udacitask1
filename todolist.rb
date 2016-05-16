@@ -1,5 +1,3 @@
-require "Time"
-
 class TodoList
   # methods and stuff go here
   attr_accessor :title, :items
